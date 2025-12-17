@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const fs = require('fs');
 const path = require('path');
 
-// Configuração do multer
+// Configuração do multer.
 const upload = multer({ dest: 'uploads/' });
 
 router.post('/enviar-formulario', upload.single('documento'), async (req, res) => {
